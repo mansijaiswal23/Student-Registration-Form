@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0; /* remove default margin */
+  padding: 0;
+}
+
+/* Top Header */
+.main-header {
+  width: 520px; /* same as .container */
+  margin: 5px auto 0 auto; /* center align */
+  text-align: center;
+  background: white;
+  color: blue;
+padding: 5px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0; /* rounded top corners */
+}
+.main-footer {
+  width: 530px; /* same as .container */
+  margin: 5px auto 0 auto; /* center align */
+  text-align: center;
+  background: white;
+  color: green;
+padding: 5px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0; /* rounded top corners */
+}
+
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  width: 500px;
+  background:linear-gradient(45deg, #fb9bf3ff, rgba(250, 227, 250, 1));
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+}
+
+.container h2 {
+  text-align: center;
+  background: linear-gradient(45deg, #c913f7ff, #f12bb6ff);
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin: -20px -30px 20px -30px; /* removes top/side margin, keeps only bottom spacing */
+}
+
+
+.name-row {
+            display: flex;
+            gap: 20px;
+            
+  flex: 1;   /* each takes equal width */
+
+
+            
+        }
+        .address-row {
+  display: flex;
+  gap: 10px;   /* space between the inputs */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+   flex: 1; 
+ 
+}
+.address-group{
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.address-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+    
+}
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.address-group input,
+.address-group select,
+textarea {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+   flex: 1; 
+   width: 100%; /* make inputs stretch across their group */
+  box-sizing: border-box; 
+
+  }
+
+  
+
+.form-group input,
+.form-group select,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+textarea {
+  resize: none;
+}
+
+.dob {
+  display: flex;
+  gap: 10px;   /* space between the selects */
+}
+
+.dob select {
+  flex: 1;     /* each select gets equal width (1/3 of the row) */
+  margin-right: 0; /* remove extra spacing, since gap is handling it */
+}
+
+
+.gender, .hobbies, .course {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+   flex: 1; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+table input {
+  width: 90%;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buttons input {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons input[type="reset"] {
+  background: #ccc;
+}
+
+.buttons input[type="submit"] {
+  background:linear-gradient(45deg, #6e0a73ff, #f2a7edff);
+  color: white;
+}
